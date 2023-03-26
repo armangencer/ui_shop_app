@@ -16,19 +16,19 @@ class Product {
 List<Product> demo_product = [
   Product(
     image: "assets/images/product_0.png",
-    title: "Long Sleeve Shirts",
+    title: "Sleeve Shirts",
     price: 165,
     bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
   Product(
     image: "assets/images/product_1.png",
-    title: "Casual Henley Shirts",
+    title: "Casual  Shirts",
     price: 99,
     bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
   Product(
     image: "assets/images/product_2.png",
-    title: "Curved Hem Shirts",
+    title: " Hem Shirts",
     price: 180,
     bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
