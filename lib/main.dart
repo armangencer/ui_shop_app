@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Shop App',
       theme: ThemeData(
+      
           scaffoldBackgroundColor: backgroundColor,
           primarySwatch: Colors.blue,
           fontFamily: "Gordita",

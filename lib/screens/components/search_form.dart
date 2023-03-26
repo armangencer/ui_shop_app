@@ -11,33 +11,36 @@ class SearchForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
-        child: TextField(
-      decoration: InputDecoration(
-          hintText: "Aramak için tıklayın",
-          filled: true,
-          fillColor: Colors.white,
-          border: outlineInputBorder,
-          focusedBorder: outlineInputBorder,
-          prefixIcon: Padding(
-            padding: const EdgeInsets.all(12),
-            child: SvgPicture.asset("assets/icons/Search.svg"),
-          ),
-          suffixIcon: Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding, vertical: defaultPadding / 2),
-            child: SizedBox(
-              height: 40,
-              width: 40,
-              child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: primaryColor,
-                      shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(
-                              Radius.circular(defaultBorderRadius)))),
-                  child: SvgPicture.asset("assets/icons/Filter.svg")),
+        child: Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        decoration: InputDecoration(
+            hintText: "Aramak için tıklayın",
+            filled: true,
+            fillColor: Colors.black12,
+            border: outlineInputBorder,
+            focusedBorder: outlineInputBorder,
+            prefixIcon: Padding(
+              padding: const EdgeInsets.all(12),
+              child: SvgPicture.asset("assets/icons/Search.svg"),
             ),
-          )),
+            suffixIcon: Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: defaultPadding, vertical: defaultPadding / 2),
+              child: SizedBox(
+                height: 40,
+                width: 40,
+                child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: primaryColor,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(
+                                Radius.circular(defaultBorderRadius)))),
+                    child: SvgPicture.asset("assets/icons/Filter.svg")),
+              ),
+            )),
+      ),
     ));
   }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ui_shop_app/models/category.dart';
 import 'package:ui_shop_app/screens/constants.dart';
-
 import 'components/categories.dart';
+import 'components/new_arrival.dart';
+import 'components/popular.dart';
 import 'components/search_form.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -33,26 +33,36 @@ class HomeScreen extends StatelessWidget {
               icon: SvgPicture.asset("assets/icons/Notification.svg"))
         ],
       ),
-      body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Padding(
-          padding: const EdgeInsets.only(top: defaultPadding),
-          child: Text(
-            "Finder",
-            style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                fontWeight: FontWeight.w400, color: Colors.black, fontSize: 30),
+      body: SingleChildScrollView(
+        child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+          Padding(
+            padding: const EdgeInsets.only(top: defaultPadding),
+            child: Text(
+              " GENÇER GİYİM",
+              style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                  fontWeight: FontWeight.w400,
+                  shadows: [const Shadow(blurRadius: 10.10)],
+                  letterSpacing: 4.0,
+                  color: Colors.black,
+                  fontSize: 30),
+            ),
           ),
-        ),
-        Text(
-          "En iyi Dış Giyim Senin İçin",
-          style:
-              Theme.of(context).textTheme.headlineLarge!.copyWith(fontSize: 18),
-        ),
-        const Padding(
-          padding: EdgeInsets.symmetric(vertical: defaultPadding),
-          child: SearchForm(),
-        ),
-        const Categories()
-      ]),
+          Text(
+            "En İyi Giyim Senin İçin",
+            style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: defaultPadding),
+            child: SearchForm(),
+          ),
+          const Categories(),
+          const SizedBox(height: defaultPadding),
+          const NewArrival(),
+          const SizedBox(height: defaultPadding),
+          const Popular(),
+        ]),
+      ),
     );
   }
 }

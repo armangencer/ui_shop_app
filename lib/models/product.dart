@@ -18,24 +18,24 @@ List<Product> demo_product = [
     image: "assets/images/product_0.png",
     title: "Long Sleeve Shirts",
     price: 165,
-    bgColor: const Color(0xFFFEFBF9),
+    bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
   Product(
     image: "assets/images/product_1.png",
     title: "Casual Henley Shirts",
     price: 99,
-    bgColor: const Color(0xFFFEFBF9),
+    bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
   Product(
     image: "assets/images/product_2.png",
     title: "Curved Hem Shirts",
     price: 180,
-    bgColor: const Color(0xFFF8FEFB),
+    bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
   Product(
     image: "assets/images/product_3.png",
     title: "Casual Nolin",
     price: 149,
-    bgColor: const Color(0xFFEEEEED),
+    bgColor: const Color.fromARGB(255, 247, 185, 144),
   ),
 ];
